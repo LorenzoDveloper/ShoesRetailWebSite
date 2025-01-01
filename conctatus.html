@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conctat Us</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="kontainer">
+        <div class="barradue">
+             <a href="index.html"><button class="tornahome">Home</button></a>
+             <a href="aboutus.html"><button class="tornahome">About Us</button></a>
+        </div>
+    </div>
+
+    <div class="sendemail">
+        <div class="boxtesto">
+         <h1 class="title">Send us an email</h1>
+         <input class="name" type="text" placeholder="Insert your name:">
+         <input class="surname" type="text" placeholder="Insert your surname:">
+         <input class="optional" type="text" placeholder="Tell us about your problem:">
+         <br>
+         <br>
+         <button id="send" type="button" onclick="SendEmail()">SEND</button>
+        </div>
+    </div>
+
+    <div class="uppertre" >
+        <p class="email">Commercial Email: googletrainers@yahoo.com</p>
+        <p class="phone">Commercial Number: +39 3332945690</p>
+     </div>
+    
+<script>
+
+document.getElementById('send').addEventListener('click', function() {
+    alert("EMAIL SENT SUCCESSFULLY 😊");
+
+
+document.querySelector('.name').value = '';
+document.querySelector('.surname').value = '';
+document.querySelector('.optional').value = '';
+
+});
+
+</script>
+
+
+
+</body>
+</html>
